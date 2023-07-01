@@ -1,0 +1,20 @@
+{
+  "image": "ubuntu:latest",
+  "name": "ubuntu-gui-container",
+  "tty": true,
+  "openStdin": true,
+  "command": [
+    "/bin/bash"
+  ],
+  "attachStdin": true,
+  "attachStdout": true,
+  "attachStderr": true,
+  "exposedPorts": {
+    "6000/tcp": {},
+    "5900/tcp": {}
+  },
+  "hostConfig": {
+    "privileged": true,
+    "publishAllPorts": true
+  }
+}
